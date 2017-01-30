@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TargetB.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3836A7821E3EDB400098CE9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3846E4B71E3F936400CBD01C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3846E4C31E3F93B900CBD01C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
