@@ -340,6 +340,7 @@
 				3846E4D41E3F93D500CBD01C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
