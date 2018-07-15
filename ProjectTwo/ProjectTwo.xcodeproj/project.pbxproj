@@ -149,7 +149,6 @@
 		381E29F21E5194FC00557BB1 /* CocoaTouchStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 381E29EF1E5194FC00557BB1 /* CocoaTouchStaticLibrary.h */; };
 		381EBA5720FB8DDE0016374F /* IndexRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381EBA5620FB8DDE0016374F /* IndexRequestHandler.swift */; };
 		381EBA5C20FB8DDE0016374F /* SpotlightIndexExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		381EBA6820FB8E010016374F /* KernelExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 381EBA6720FB8E010016374F /* KernelExtension.c */; };
 		3836A7871E3EDB400098CE9A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836A7861E3EDB400098CE9A /* main.swift */; };
 		3846E4C71E3F93B900CBD01C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846E4C61E3F93B900CBD01C /* main.swift */; };
 /* End PBXBuildFile section */
@@ -751,9 +750,6 @@
 		381EBA5620FB8DDE0016374F /* IndexRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRequestHandler.swift; sourceTree = "<group>"; };
 		381EBA5820FB8DDE0016374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381EBA5920FB8DDE0016374F /* SpotlightIndexExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotlightIndexExtension.entitlements; sourceTree = "<group>"; };
-		381EBA6520FB8E010016374F /* KernelExtension.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KernelExtension.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		381EBA6720FB8E010016374F /* KernelExtension.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelExtension.c; sourceTree = "<group>"; };
-		381EBA6920FB8E010016374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3836A7831E3EDB400098CE9A /* ProjectTwo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectTwo; sourceTree = BUILT_PRODUCTS_DIR; };
 		3836A7861E3EDB400098CE9A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3846E4C41E3F93B900CBD01C /* TargetB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TargetB; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1081,13 +1077,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381EBA5120FB8DDE0016374F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381EBA6220FB8E010016374F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1654,15 +1643,6 @@
 			path = SpotlightIndexExtension;
 			sourceTree = "<group>";
 		};
-		381EBA6620FB8E010016374F /* KernelExtension */ = {
-			isa = PBXGroup;
-			children = (
-				381EBA6720FB8E010016374F /* KernelExtension.c */,
-				381EBA6920FB8E010016374F /* Info.plist */,
-			);
-			path = KernelExtension;
-			sourceTree = "<group>";
-		};
 		3836A77A1E3EDB400098CE9A = {
 			isa = PBXGroup;
 			children = (
@@ -1718,7 +1698,6 @@
 				381E29D91E5194C800557BB1 /* CocoaTouchFrameworkTests */,
 				381E29EE1E5194FC00557BB1 /* CocoaTouchStaticLibrary */,
 				381EBA5520FB8DDE0016374F /* SpotlightIndexExtension */,
-				381EBA6620FB8E010016374F /* KernelExtension */,
 				381E26BB1E516E9C00557BB1 /* Frameworks */,
 				3836A7841E3EDB400098CE9A /* Products */,
 			);
@@ -1779,7 +1758,6 @@
 				381E29D31E5194C800557BB1 /* CocoaTouchFrameworkTests.xctest */,
 				381E29ED1E5194FC00557BB1 /* libCocoaTouchStaticLibrary.a */,
 				381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */,
-				381EBA6520FB8E010016374F /* KernelExtension.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1879,13 +1857,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E29DD1E5194C800557BB1 /* CocoaTouchFramework.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381EBA6020FB8E010016374F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2783,24 +2754,6 @@
 			productReference = 381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		381EBA6420FB8E010016374F /* KernelExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381EBA6A20FB8E010016374F /* Build configuration list for PBXNativeTarget "KernelExtension" */;
-			buildPhases = (
-				381EBA6020FB8E010016374F /* Headers */,
-				381EBA6120FB8E010016374F /* Sources */,
-				381EBA6220FB8E010016374F /* Frameworks */,
-				381EBA6320FB8E010016374F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KernelExtension;
-			productName = KernelExtension;
-			productReference = 381EBA6520FB8E010016374F /* KernelExtension.kext */;
-			productType = "com.apple.product-type.kernel-extension";
-		};
 		3836A7821E3EDB400098CE9A /* ProjectTwo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3836A78A1E3EDB400098CE9A /* Build configuration list for PBXNativeTarget "ProjectTwo" */;
@@ -3106,11 +3059,6 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
-					381EBA6420FB8E010016374F = {
-						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
 					3836A7821E3EDB400098CE9A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -3188,7 +3136,6 @@
 				381E29D21E5194C800557BB1 /* CocoaTouchFrameworkTests */,
 				381E29EC1E5194FC00557BB1 /* CocoaTouchStaticLibrary */,
 				381EBA5320FB8DDE0016374F /* SpotlightIndexExtension */,
-				381EBA6420FB8E010016374F /* KernelExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -3551,13 +3498,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381EBA5220FB8DDE0016374F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381EBA6320FB8E010016374F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3972,14 +3912,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				381EBA5720FB8DDE0016374F /* IndexRequestHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381EBA6120FB8E010016374F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381EBA6820FB8E010016374F /* KernelExtension.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5992,69 +5924,6 @@
 			};
 			name = Release;
 		};
-		381EBA6B20FB8E010016374F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = KernelExtension/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULE_NAME = com.joelsaltzman.KernelExtension;
-				MODULE_START = KernelExtension_start;
-				MODULE_STOP = KernelExtension_stop;
-				MODULE_VERSION = 1.0.0d1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = Debug;
-		};
-		381EBA6C20FB8E010016374F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = KernelExtension/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULE_NAME = com.joelsaltzman.KernelExtension;
-				MODULE_START = KernelExtension_start;
-				MODULE_STOP = KernelExtension_stop;
-				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = Release;
-		};
 		3836A7881E3EDB400098CE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6628,15 +6497,6 @@
 			buildConfigurations = (
 				381EBA5E20FB8DDE0016374F /* Debug */,
 				381EBA5F20FB8DDE0016374F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		381EBA6A20FB8E010016374F /* Build configuration list for PBXNativeTarget "KernelExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381EBA6B20FB8E010016374F /* Debug */,
-				381EBA6C20FB8E010016374F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
