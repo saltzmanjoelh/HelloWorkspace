@@ -43,7 +43,6 @@
 		381E274A1E518FD200557BB1 /* AutomatorAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E27491E518FD200557BB1 /* AutomatorAction.m */; };
 		381E274D1E518FD200557BB1 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381E274B1E518FD200557BB1 /* main.xib */; };
 		381E27511E518FD200557BB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 381E274F1E518FD200557BB1 /* InfoPlist.strings */; };
-		381E275D1E518FDA00557BB1 /* KernelExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E275C1E518FDA00557BB1 /* KernelExtension.c */; };
 		381E276A1E518FEC00557BB1 /* PreferencePane.h in Headers */ = {isa = PBXBuildFile; fileRef = 381E27691E518FEC00557BB1 /* PreferencePane.h */; };
 		381E276C1E518FEC00557BB1 /* PreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E276B1E518FEC00557BB1 /* PreferencePane.m */; };
 		381E276E1E518FEC00557BB1 /* PreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 381E276D1E518FEC00557BB1 /* PreferencePane.tiff */; };
@@ -51,10 +50,6 @@
 		381E277F1E518FF700557BB1 /* QuartzPluginPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E277E1E518FF700557BB1 /* QuartzPluginPlugIn.m */; };
 		381E278C1E51900600557BB1 /* ScreenSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 381E278B1E51900600557BB1 /* ScreenSaverView.h */; };
 		381E278E1E51900600557BB1 /* ScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E278D1E51900600557BB1 /* ScreenSaverView.m */; };
-		381E27C41E5191F400557BB1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27C31E5191F400557BB1 /* main.c */; };
-		381E27C61E5191F400557BB1 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E27C51E5191F400557BB1 /* GetMetadataForFile.m */; };
-		381E27C91E5191F400557BB1 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E27C81E5191F400557BB1 /* MySpotlightImporter.m */; };
-		381E27CE1E5191F400557BB1 /* SpotlightImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 381E27C01E5191F400557BB1 /* SpotlightImporter.mdimporter */; };
 		381E27EB1E51922800557BB1 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EA1E51922800557BB1 /* GenerateThumbnailForURL.c */; };
 		381E27ED1E51922800557BB1 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EC1E51922800557BB1 /* GeneratePreviewForURL.c */; };
 		381E27EF1E51922800557BB1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EE1E51922800557BB1 /* main.c */; };
@@ -152,6 +147,9 @@
 		381E29E11E5194C800557BB1 /* CocoaTouchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381E29CB1E5194C700557BB1 /* CocoaTouchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		381E29F11E5194FC00557BB1 /* CocoaTouchStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E29F01E5194FC00557BB1 /* CocoaTouchStaticLibrary.m */; };
 		381E29F21E5194FC00557BB1 /* CocoaTouchStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 381E29EF1E5194FC00557BB1 /* CocoaTouchStaticLibrary.h */; };
+		381EBA5720FB8DDE0016374F /* IndexRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381EBA5620FB8DDE0016374F /* IndexRequestHandler.swift */; };
+		381EBA5C20FB8DDE0016374F /* SpotlightIndexExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		381EBA6820FB8E010016374F /* KernelExtension.c in Sources */ = {isa = PBXBuildFile; fileRef = 381EBA6720FB8E010016374F /* KernelExtension.c */; };
 		3836A7871E3EDB400098CE9A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836A7861E3EDB400098CE9A /* main.swift */; };
 		3846E4C71E3F93B900CBD01C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846E4C61E3F93B900CBD01C /* main.swift */; };
 /* End PBXBuildFile section */
@@ -219,13 +217,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 381E27041E518F1F00557BB1;
 			remoteInfo = XPCService;
-		};
-		381E27CC1E5191F400557BB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3836A77B1E3EDB400098CE9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 381E27BF1E5191F400557BB1;
-			remoteInfo = SpotlightImporter;
 		};
 		381E28511E5193BD00557BB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -353,6 +344,13 @@
 			remoteGlobalIDString = 381E29CA1E5194C700557BB1;
 			remoteInfo = CocoaTouchFramework;
 		};
+		381EBA5A20FB8DDE0016374F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3836A77B1E3EDB400098CE9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381EBA5320FB8DDE0016374F;
+			remoteInfo = SpotlightIndexExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -362,6 +360,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				381EBA5C20FB8DDE0016374F /* SpotlightIndexExtension.appex in Embed App Extensions */,
 				381E26C81E516E9C00557BB1 /* ActionExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -605,7 +604,6 @@
 		381E274C1E518FD200557BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 		381E274E1E518FD200557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E27501E518FD200557BB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		381E275A1E518FDA00557BB1 /* KernelExtension.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KernelExtension.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E275C1E518FDA00557BB1 /* KernelExtension.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelExtension.c; sourceTree = "<group>"; };
 		381E275E1E518FDA00557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E27671E518FEC00557BB1 /* PreferencePane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreferencePane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -622,7 +620,6 @@
 		381E278B1E51900600557BB1 /* ScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverView.h; sourceTree = "<group>"; };
 		381E278D1E51900600557BB1 /* ScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverView.m; sourceTree = "<group>"; };
 		381E278F1E51900600557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		381E27C01E5191F400557BB1 /* SpotlightImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = "wrapper.spotlight-importer"; includeInIndex = 0; path = SpotlightImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E27C31E5191F400557BB1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		381E27C51E5191F400557BB1 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		381E27C71E5191F400557BB1 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
@@ -759,6 +756,13 @@
 		381E29ED1E5194FC00557BB1 /* libCocoaTouchStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaTouchStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E29EF1E5194FC00557BB1 /* CocoaTouchStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaTouchStaticLibrary.h; sourceTree = "<group>"; };
 		381E29F01E5194FC00557BB1 /* CocoaTouchStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaTouchStaticLibrary.m; sourceTree = "<group>"; };
+		381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpotlightIndexExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		381EBA5620FB8DDE0016374F /* IndexRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRequestHandler.swift; sourceTree = "<group>"; };
+		381EBA5820FB8DDE0016374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381EBA5920FB8DDE0016374F /* SpotlightIndexExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotlightIndexExtension.entitlements; sourceTree = "<group>"; };
+		381EBA6520FB8E010016374F /* KernelExtension.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KernelExtension.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		381EBA6720FB8E010016374F /* KernelExtension.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelExtension.c; sourceTree = "<group>"; };
+		381EBA6920FB8E010016374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3836A7831E3EDB400098CE9A /* ProjectTwo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectTwo; sourceTree = BUILT_PRODUCTS_DIR; };
 		3836A7861E3EDB400098CE9A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3846E4C41E3F93B900CBD01C /* TargetB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TargetB; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -875,13 +879,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		381E27561E518FDA00557BB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		381E27631E518FEC00557BB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -897,13 +894,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E27851E51900600557BB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27BD1E5191F400557BB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1093,6 +1083,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E29EA1E5194FC00557BB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381EBA5120FB8DDE0016374F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381EBA6220FB8E010016374F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1679,6 +1683,25 @@
 			path = CocoaTouchStaticLibrary;
 			sourceTree = "<group>";
 		};
+		381EBA5520FB8DDE0016374F /* SpotlightIndexExtension */ = {
+			isa = PBXGroup;
+			children = (
+				381EBA5620FB8DDE0016374F /* IndexRequestHandler.swift */,
+				381EBA5820FB8DDE0016374F /* Info.plist */,
+				381EBA5920FB8DDE0016374F /* SpotlightIndexExtension.entitlements */,
+			);
+			path = SpotlightIndexExtension;
+			sourceTree = "<group>";
+		};
+		381EBA6620FB8E010016374F /* KernelExtension */ = {
+			isa = PBXGroup;
+			children = (
+				381EBA6720FB8E010016374F /* KernelExtension.c */,
+				381EBA6920FB8E010016374F /* Info.plist */,
+			);
+			path = KernelExtension;
+			sourceTree = "<group>";
+		};
 		3836A77A1E3EDB400098CE9A = {
 			isa = PBXGroup;
 			children = (
@@ -1735,6 +1758,8 @@
 				381E29CC1E5194C800557BB1 /* CocoaTouchFramework */,
 				381E29D91E5194C800557BB1 /* CocoaTouchFrameworkTests */,
 				381E29EE1E5194FC00557BB1 /* CocoaTouchStaticLibrary */,
+				381EBA5520FB8DDE0016374F /* SpotlightIndexExtension */,
+				381EBA6620FB8E010016374F /* KernelExtension */,
 				381E26BB1E516E9C00557BB1 /* Frameworks */,
 				3836A7841E3EDB400098CE9A /* Products */,
 			);
@@ -1761,11 +1786,9 @@
 				381E27231E518FBA00557BB1 /* AppleScriptApplication.app */,
 				381E27391E518FCA00557BB1 /* AddressBookPlugin.bundle */,
 				381E27461E518FD200557BB1 /* AutomatorAction.action */,
-				381E275A1E518FDA00557BB1 /* KernelExtension.kext */,
 				381E27671E518FEC00557BB1 /* PreferencePane.prefPane */,
 				381E277B1E518FF700557BB1 /* QuartzPlugin.plugin */,
 				381E27891E51900600557BB1 /* ScreenSaver.saver */,
-				381E27C01E5191F400557BB1 /* SpotlightImporter.mdimporter */,
 				381E27E81E51922800557BB1 /* QuickLookPlugin.qlgenerator */,
 				381E27F91E51928100557BB1 /* IOKitDriver.kext */,
 				381E28071E51928E00557BB1 /* InstallerPlugin.bundle */,
@@ -1797,6 +1820,8 @@
 				381E29CB1E5194C700557BB1 /* CocoaTouchFramework.framework */,
 				381E29D31E5194C800557BB1 /* CocoaTouchFrameworkTests.xctest */,
 				381E29ED1E5194FC00557BB1 /* libCocoaTouchStaticLibrary.a */,
+				381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */,
+				381EBA6520FB8E010016374F /* KernelExtension.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1829,13 +1854,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E26F21E516EBF00557BB1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27571E518FDA00557BB1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1906,6 +1924,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381EBA6020FB8E010016374F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1926,7 +1951,7 @@
 				381E26C71E516E9C00557BB1 /* PBXTargetDependency */,
 				381E26E61E516EB200557BB1 /* PBXTargetDependency */,
 				381E270F1E518F1F00557BB1 /* PBXTargetDependency */,
-				381E27CD1E5191F400557BB1 /* PBXTargetDependency */,
+				381EBA5B20FB8DDE0016374F /* PBXTargetDependency */,
 			);
 			name = Application;
 			productName = Application;
@@ -2194,24 +2219,6 @@
 			productReference = 381E27461E518FD200557BB1 /* AutomatorAction.action */;
 			productType = "com.apple.product-type.bundle";
 		};
-		381E27591E518FDA00557BB1 /* KernelExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381E275F1E518FDA00557BB1 /* Build configuration list for PBXNativeTarget "KernelExtension" */;
-			buildPhases = (
-				381E27551E518FDA00557BB1 /* Sources */,
-				381E27561E518FDA00557BB1 /* Frameworks */,
-				381E27571E518FDA00557BB1 /* Headers */,
-				381E27581E518FDA00557BB1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KernelExtension;
-			productName = KernelExtension;
-			productReference = 381E275A1E518FDA00557BB1 /* KernelExtension.kext */;
-			productType = "com.apple.product-type.kernel-extension";
-		};
 		381E27661E518FEC00557BB1 /* PreferencePane */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 381E27731E518FEC00557BB1 /* Build configuration list for PBXNativeTarget "PreferencePane" */;
@@ -2265,23 +2272,6 @@
 			productName = ScreenSaver;
 			productReference = 381E27891E51900600557BB1 /* ScreenSaver.saver */;
 			productType = "com.apple.product-type.bundle";
-		};
-		381E27BF1E5191F400557BB1 /* SpotlightImporter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381E27CF1E5191F400557BB1 /* Build configuration list for PBXNativeTarget "SpotlightImporter" */;
-			buildPhases = (
-				381E27BC1E5191F400557BB1 /* Sources */,
-				381E27BD1E5191F400557BB1 /* Frameworks */,
-				381E27BE1E5191F400557BB1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SpotlightImporter;
-			productName = SpotlightImporter;
-			productReference = 381E27C01E5191F400557BB1 /* SpotlightImporter.mdimporter */;
-			productType = "com.apple.product-type.spotlight-importer";
 		};
 		381E27E71E51922800557BB1 /* QuickLookPlugin */ = {
 			isa = PBXNativeTarget;
@@ -2833,6 +2823,41 @@
 			productReference = 381E29ED1E5194FC00557BB1 /* libCocoaTouchStaticLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		381EBA5320FB8DDE0016374F /* SpotlightIndexExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381EBA5D20FB8DDE0016374F /* Build configuration list for PBXNativeTarget "SpotlightIndexExtension" */;
+			buildPhases = (
+				381EBA5020FB8DDE0016374F /* Sources */,
+				381EBA5120FB8DDE0016374F /* Frameworks */,
+				381EBA5220FB8DDE0016374F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotlightIndexExtension;
+			productName = SpotlightIndexExtension;
+			productReference = 381EBA5420FB8DDE0016374F /* SpotlightIndexExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		381EBA6420FB8E010016374F /* KernelExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381EBA6A20FB8E010016374F /* Build configuration list for PBXNativeTarget "KernelExtension" */;
+			buildPhases = (
+				381EBA6020FB8E010016374F /* Headers */,
+				381EBA6120FB8E010016374F /* Sources */,
+				381EBA6220FB8E010016374F /* Frameworks */,
+				381EBA6320FB8E010016374F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KernelExtension;
+			productName = KernelExtension;
+			productReference = 381EBA6520FB8E010016374F /* KernelExtension.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
 		3836A7821E3EDB400098CE9A /* ProjectTwo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3836A78A1E3EDB400098CE9A /* Build configuration list for PBXNativeTarget "ProjectTwo" */;
@@ -2873,7 +2898,7 @@
 		3836A77B1E3EDB400098CE9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joel Saltzman";
 				TargetAttributes = {
@@ -2962,11 +2987,6 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
-					381E27591E518FDA00557BB1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
 					381E27661E518FEC00557BB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -2978,11 +2998,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					381E27881E51900600557BB1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
-					381E27BF1E5191F400557BB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
@@ -3148,6 +3163,16 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
+					381EBA5320FB8DDE0016374F = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = A43A74F4MB;
+						ProvisioningStyle = Automatic;
+					};
+					381EBA6420FB8E010016374F = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = A43A74F4MB;
+						ProvisioningStyle = Automatic;
+					};
 					3836A7821E3EDB400098CE9A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -3191,11 +3216,9 @@
 				381E27221E518FBA00557BB1 /* AppleScriptApplication */,
 				381E27381E518FCA00557BB1 /* AddressBookPlugin */,
 				381E27451E518FD200557BB1 /* AutomatorAction */,
-				381E27591E518FDA00557BB1 /* KernelExtension */,
 				381E27661E518FEC00557BB1 /* PreferencePane */,
 				381E277A1E518FF700557BB1 /* QuartzPlugin */,
 				381E27881E51900600557BB1 /* ScreenSaver */,
-				381E27BF1E5191F400557BB1 /* SpotlightImporter */,
 				381E27E71E51922800557BB1 /* QuickLookPlugin */,
 				381E27F81E51928100557BB1 /* IOKitDriver */,
 				381E28061E51928E00557BB1 /* InstallerPlugin */,
@@ -3227,6 +3250,8 @@
 				381E29CA1E5194C700557BB1 /* CocoaTouchFramework */,
 				381E29D21E5194C800557BB1 /* CocoaTouchFrameworkTests */,
 				381E29EC1E5194FC00557BB1 /* CocoaTouchStaticLibrary */,
+				381EBA5320FB8DDE0016374F /* SpotlightIndexExtension */,
+				381EBA6420FB8E010016374F /* KernelExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -3238,7 +3263,6 @@
 			files = (
 				381E265D1E516DBC00557BB1 /* Assets.xcassets in Resources */,
 				381E26601E516DBC00557BB1 /* MainMenu.xib in Resources */,
-				381E27CE1E5191F400557BB1 /* SpotlightImporter.mdimporter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3342,13 +3366,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		381E27581E518FDA00557BB1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		381E27651E518FEC00557BB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3366,13 +3383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E27871E51900600557BB1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27BE1E5191F400557BB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3610,6 +3620,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381EBA5220FB8DDE0016374F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381EBA6320FB8E010016374F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -3771,14 +3795,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		381E27551E518FDA00557BB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381E275D1E518FDA00557BB1 /* KernelExtension.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		381E27621E518FEC00557BB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3800,16 +3816,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E278E1E51900600557BB1 /* ScreenSaverView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27BC1E5191F400557BB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381E27C91E5191F400557BB1 /* MySpotlightImporter.m in Sources */,
-				381E27C41E5191F400557BB1 /* main.c in Sources */,
-				381E27C61E5191F400557BB1 /* GetMetadataForFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4031,6 +4037,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381EBA5020FB8DDE0016374F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381EBA5720FB8DDE0016374F /* IndexRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381EBA6120FB8E010016374F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381EBA6820FB8E010016374F /* KernelExtension.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3836A77F1E3EDB400098CE9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4094,11 +4116,6 @@
 			isa = PBXTargetDependency;
 			target = 381E27041E518F1F00557BB1 /* XPCService */;
 			targetProxy = 381E270E1E518F1F00557BB1 /* PBXContainerItemProxy */;
-		};
-		381E27CD1E5191F400557BB1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 381E27BF1E5191F400557BB1 /* SpotlightImporter */;
-			targetProxy = 381E27CC1E5191F400557BB1 /* PBXContainerItemProxy */;
 		};
 		381E28521E5193BD00557BB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4189,6 +4206,11 @@
 			isa = PBXTargetDependency;
 			target = 381E29CA1E5194C700557BB1 /* CocoaTouchFramework */;
 			targetProxy = 381E29DE1E5194C800557BB1 /* PBXContainerItemProxy */;
+		};
+		381EBA5B20FB8DDE0016374F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381EBA5320FB8DDE0016374F /* SpotlightIndexExtension */;
+			targetProxy = 381EBA5A20FB8DDE0016374F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4830,36 +4852,6 @@
 			};
 			name = Release;
 		};
-		381E27601E518FDA00557BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = KernelExtension/Info.plist;
-				MODULE_NAME = com.joelsaltzman.KernelExtension;
-				MODULE_START = KernelExtension_start;
-				MODULE_STOP = KernelExtension_stop;
-				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = Debug;
-		};
-		381E27611E518FDA00557BB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = KernelExtension/Info.plist;
-				MODULE_NAME = com.joelsaltzman.KernelExtension;
-				MODULE_START = KernelExtension_start;
-				MODULE_STOP = KernelExtension_stop;
-				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = Release;
-		};
 		381E27741E518FEC00557BB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4935,38 +4927,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.ScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
-			};
-			name = Release;
-		};
-		381E27D01E5191F400557BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = SpotlightImporter/Info.plist;
-				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
-				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.SpotlightImporter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = mdimporter;
-			};
-			name = Debug;
-		};
-		381E27D11E5191F400557BB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = SpotlightImporter/Info.plist;
-				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
-				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.SpotlightImporter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Release;
 		};
@@ -6061,6 +6021,132 @@
 			};
 			name = Release;
 		};
+		381EBA5E20FB8DDE0016374F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SpotlightIndexExtension/SpotlightIndexExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A43A74F4MB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SpotlightIndexExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.Application.SpotlightIndexExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		381EBA5F20FB8DDE0016374F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SpotlightIndexExtension/SpotlightIndexExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A43A74F4MB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SpotlightIndexExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.Application.SpotlightIndexExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		381EBA6B20FB8E010016374F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A43A74F4MB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = KernelExtension/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULE_NAME = com.joelsaltzman.KernelExtension;
+				MODULE_START = KernelExtension_start;
+				MODULE_STOP = KernelExtension_stop;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		381EBA6C20FB8E010016374F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A43A74F4MB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = KernelExtension/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULE_NAME = com.joelsaltzman.KernelExtension;
+				MODULE_START = KernelExtension_start;
+				MODULE_STOP = KernelExtension_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.KernelExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
 		3836A7881E3EDB400098CE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6195,6 +6281,7 @@
 				381E26791E516DBC00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E267F1E516DBC00557BB1 /* Build configuration list for PBXNativeTarget "ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -6203,6 +6290,7 @@
 				381E267B1E516DBC00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26801E516DBC00557BB1 /* Build configuration list for PBXNativeTarget "ApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -6211,6 +6299,7 @@
 				381E267D1E516DBC00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26AD1E516E6300557BB1 /* Build configuration list for PBXNativeTarget "Game" */ = {
 			isa = XCConfigurationList;
@@ -6219,6 +6308,7 @@
 				381E26AF1E516E6300557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26B01E516E6300557BB1 /* Build configuration list for PBXNativeTarget "GameTests" */ = {
 			isa = XCConfigurationList;
@@ -6227,6 +6317,7 @@
 				381E26B21E516E6300557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26B31E516E6300557BB1 /* Build configuration list for PBXNativeTarget "GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -6235,6 +6326,7 @@
 				381E26B51E516E6300557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26C91E516E9C00557BB1 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
 			isa = XCConfigurationList;
@@ -6243,6 +6335,7 @@
 				381E26CB1E516E9C00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26E91E516EB200557BB1 /* Build configuration list for PBXNativeTarget "CocoaFramework" */ = {
 			isa = XCConfigurationList;
@@ -6251,6 +6344,7 @@
 				381E26EB1E516EB200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26ED1E516EB200557BB1 /* Build configuration list for PBXNativeTarget "CocoaFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -6259,6 +6353,7 @@
 				381E26EF1E516EB200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26F51E516EBF00557BB1 /* Build configuration list for PBXNativeTarget "Library" */ = {
 			isa = XCConfigurationList;
@@ -6267,6 +6362,7 @@
 				381E26F71E516EBF00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E26FE1E518F1600557BB1 /* Build configuration list for PBXNativeTarget "MetalLibrary" */ = {
 			isa = XCConfigurationList;
@@ -6275,6 +6371,7 @@
 				381E27001E518F1600557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27111E518F1F00557BB1 /* Build configuration list for PBXNativeTarget "XPCService" */ = {
 			isa = XCConfigurationList;
@@ -6283,6 +6380,7 @@
 				381E27131E518F1F00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E271C1E518F6F00557BB1 /* Build configuration list for PBXNativeTarget "Bundle" */ = {
 			isa = XCConfigurationList;
@@ -6291,6 +6389,7 @@
 				381E271E1E518F6F00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27321E518FBA00557BB1 /* Build configuration list for PBXNativeTarget "AppleScriptApplication" */ = {
 			isa = XCConfigurationList;
@@ -6299,6 +6398,7 @@
 				381E27341E518FBA00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E273E1E518FCA00557BB1 /* Build configuration list for PBXNativeTarget "AddressBookPlugin" */ = {
 			isa = XCConfigurationList;
@@ -6307,6 +6407,7 @@
 				381E27401E518FCA00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27521E518FD200557BB1 /* Build configuration list for PBXNativeTarget "AutomatorAction" */ = {
 			isa = XCConfigurationList;
@@ -6315,14 +6416,7 @@
 				381E27541E518FD200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		381E275F1E518FDA00557BB1 /* Build configuration list for PBXNativeTarget "KernelExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381E27601E518FDA00557BB1 /* Debug */,
-				381E27611E518FDA00557BB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27731E518FEC00557BB1 /* Build configuration list for PBXNativeTarget "PreferencePane" */ = {
 			isa = XCConfigurationList;
@@ -6331,6 +6425,7 @@
 				381E27751E518FEC00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27811E518FF700557BB1 /* Build configuration list for PBXNativeTarget "QuartzPlugin" */ = {
 			isa = XCConfigurationList;
@@ -6339,6 +6434,7 @@
 				381E27831E518FF700557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27901E51900600557BB1 /* Build configuration list for PBXNativeTarget "ScreenSaver" */ = {
 			isa = XCConfigurationList;
@@ -6347,14 +6443,7 @@
 				381E27921E51900600557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		381E27CF1E5191F400557BB1 /* Build configuration list for PBXNativeTarget "SpotlightImporter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381E27D01E5191F400557BB1 /* Debug */,
-				381E27D11E5191F400557BB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E27F11E51922800557BB1 /* Build configuration list for PBXNativeTarget "QuickLookPlugin" */ = {
 			isa = XCConfigurationList;
@@ -6363,6 +6452,7 @@
 				381E27F31E51922800557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28001E51928100557BB1 /* Build configuration list for PBXNativeTarget "IOKitDriver" */ = {
 			isa = XCConfigurationList;
@@ -6371,6 +6461,7 @@
 				381E28021E51928100557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28181E51928E00557BB1 /* Build configuration list for PBXNativeTarget "InstallerPlugin" */ = {
 			isa = XCConfigurationList;
@@ -6379,6 +6470,7 @@
 				381E281A1E51928E00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28341E51935E00557BB1 /* Build configuration list for PBXNativeTarget "ImageUnitPlugin" */ = {
 			isa = XCConfigurationList;
@@ -6387,6 +6479,7 @@
 				381E28361E51935E00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28911E5193BD00557BB1 /* Build configuration list for PBXNativeTarget "watchOS Extension" */ = {
 			isa = XCConfigurationList;
@@ -6395,6 +6488,7 @@
 				381E28931E5193BD00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28951E5193BD00557BB1 /* Build configuration list for PBXNativeTarget "watchOS App" */ = {
 			isa = XCConfigurationList;
@@ -6403,6 +6497,7 @@
 				381E28971E5193BD00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28991E5193BD00557BB1 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
@@ -6411,6 +6506,7 @@
 				381E289B1E5193BD00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E289C1E5193BD00557BB1 /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
@@ -6419,6 +6515,7 @@
 				381E289E1E5193BD00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E289F1E5193BD00557BB1 /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
@@ -6427,6 +6524,7 @@
 				381E28A11E5193BD00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28A71E5193D900557BB1 /* Build configuration list for PBXNativeTarget "InAppPurchaseContent" */ = {
 			isa = XCConfigurationList;
@@ -6435,6 +6533,7 @@
 				381E28A91E5193D900557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28D01E5193F100557BB1 /* Build configuration list for PBXNativeTarget "TvApp" */ = {
 			isa = XCConfigurationList;
@@ -6443,6 +6542,7 @@
 				381E28D21E5193F100557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28D31E5193F100557BB1 /* Build configuration list for PBXNativeTarget "TvAppTests" */ = {
 			isa = XCConfigurationList;
@@ -6451,6 +6551,7 @@
 				381E28D51E5193F100557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28D61E5193F100557BB1 /* Build configuration list for PBXNativeTarget "TvAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -6459,6 +6560,7 @@
 				381E28D81E5193F100557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E28E71E51940700557BB1 /* Build configuration list for PBXNativeTarget "TvServiceExtension" */ = {
 			isa = XCConfigurationList;
@@ -6467,6 +6569,7 @@
 				381E28E91E51940700557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29071E51942300557BB1 /* Build configuration list for PBXNativeTarget "TvFramework" */ = {
 			isa = XCConfigurationList;
@@ -6475,6 +6578,7 @@
 				381E29091E51942300557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E290B1E51942300557BB1 /* Build configuration list for PBXNativeTarget "TvFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -6483,6 +6587,7 @@
 				381E290D1E51942300557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29181E51944000557BB1 /* Build configuration list for PBXNativeTarget "TvTouchStaticLibrary" */ = {
 			isa = XCConfigurationList;
@@ -6491,6 +6596,7 @@
 				381E291A1E51944000557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29291E51945900557BB1 /* Build configuration list for PBXNativeTarget "WatchFramework" */ = {
 			isa = XCConfigurationList;
@@ -6499,6 +6605,7 @@
 				381E292B1E51945900557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29371E51946400557BB1 /* Build configuration list for PBXNativeTarget "WatchStaticLibrary" */ = {
 			isa = XCConfigurationList;
@@ -6507,6 +6614,7 @@
 				381E29391E51946400557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29591E51948A00557BB1 /* Build configuration list for PBXNativeTarget "DocumentProviderFileProvider" */ = {
 			isa = XCConfigurationList;
@@ -6515,6 +6623,7 @@
 				381E295B1E51948A00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E295C1E51948A00557BB1 /* Build configuration list for PBXNativeTarget "DocumentProvider" */ = {
 			isa = XCConfigurationList;
@@ -6523,6 +6632,7 @@
 				381E295E1E51948A00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29891E5194A200557BB1 /* Build configuration list for PBXNativeTarget "iOSApp" */ = {
 			isa = XCConfigurationList;
@@ -6531,6 +6641,7 @@
 				381E298B1E5194A200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E298C1E5194A200557BB1 /* Build configuration list for PBXNativeTarget "iOSAppTests" */ = {
 			isa = XCConfigurationList;
@@ -6539,6 +6650,7 @@
 				381E298E1E5194A200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E298F1E5194A200557BB1 /* Build configuration list for PBXNativeTarget "iOSAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -6547,6 +6659,7 @@
 				381E29911E5194A200557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E299E1E5194AE00557BB1 /* Build configuration list for PBXNativeTarget "StickerPackExtension" */ = {
 			isa = XCConfigurationList;
@@ -6555,6 +6668,7 @@
 				381E29A01E5194AE00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29A21E5194AE00557BB1 /* Build configuration list for PBXNativeTarget "StickerApp" */ = {
 			isa = XCConfigurationList;
@@ -6563,6 +6677,7 @@
 				381E29A41E5194AE00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29BF1E5194B800557BB1 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
 			isa = XCConfigurationList;
@@ -6571,6 +6686,7 @@
 				381E29C11E5194B800557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29C31E5194B800557BB1 /* Build configuration list for PBXNativeTarget "iMessageApp" */ = {
 			isa = XCConfigurationList;
@@ -6579,6 +6695,7 @@
 				381E29C51E5194B800557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29E21E5194C800557BB1 /* Build configuration list for PBXNativeTarget "CocoaTouchFramework" */ = {
 			isa = XCConfigurationList;
@@ -6587,6 +6704,7 @@
 				381E29E41E5194C800557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29E61E5194C800557BB1 /* Build configuration list for PBXNativeTarget "CocoaTouchFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -6595,6 +6713,7 @@
 				381E29E81E5194C800557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381E29F31E5194FC00557BB1 /* Build configuration list for PBXNativeTarget "CocoaTouchStaticLibrary" */ = {
 			isa = XCConfigurationList;
@@ -6603,6 +6722,25 @@
 				381E29F51E5194FC00557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381EBA5D20FB8DDE0016374F /* Build configuration list for PBXNativeTarget "SpotlightIndexExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381EBA5E20FB8DDE0016374F /* Debug */,
+				381EBA5F20FB8DDE0016374F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381EBA6A20FB8E010016374F /* Build configuration list for PBXNativeTarget "KernelExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381EBA6B20FB8E010016374F /* Debug */,
+				381EBA6C20FB8E010016374F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3836A77E1E3EDB400098CE9A /* Build configuration list for PBXProject "ProjectTwo" */ = {
 			isa = XCConfigurationList;
