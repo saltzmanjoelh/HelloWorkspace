@@ -30,7 +30,6 @@
 		381E26E41E516EB200557BB1 /* CocoaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 381E26D41E516EB200557BB1 /* CocoaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		381E26E71E516EB200557BB1 /* CocoaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E26D21E516EB200557BB1 /* CocoaFramework.framework */; };
 		381E26E81E516EB200557BB1 /* CocoaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381E26D21E516EB200557BB1 /* CocoaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		381E26FD1E518F1600557BB1 /* MetalLibrary.metal in Sources */ = {isa = PBXBuildFile; fileRef = 381E26FC1E518F1600557BB1 /* MetalLibrary.metal */; };
 		381E270A1E518F1F00557BB1 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E27091E518F1F00557BB1 /* XPCService.m */; };
 		381E270C1E518F1F00557BB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E270B1E518F1F00557BB1 /* main.m */; };
 		381E27101E518F1F00557BB1 /* XPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 381E27051E518F1F00557BB1 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -575,8 +574,6 @@
 		381E26E11E516EB200557BB1 /* CocoaFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaFrameworkTests.swift; sourceTree = "<group>"; };
 		381E26E31E516EB200557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E26F41E516EBF00557BB1 /* libLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		381E26FA1E518F1600557BB1 /* MetalLibrary.metallib */ = {isa = PBXFileReference; explicitFileType = "archive.metal-library"; includeInIndex = 0; path = MetalLibrary.metallib; sourceTree = BUILT_PRODUCTS_DIR; };
-		381E26FC1E518F1600557BB1 /* MetalLibrary.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalLibrary.metal; sourceTree = "<group>"; };
 		381E27051E518F1F00557BB1 /* XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E27071E518F1F00557BB1 /* XPCServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCServiceProtocol.h; sourceTree = "<group>"; };
 		381E27081E518F1F00557BB1 /* XPCService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCService.h; sourceTree = "<group>"; };
@@ -1197,14 +1194,6 @@
 			path = CocoaFrameworkTests;
 			sourceTree = "<group>";
 		};
-		381E26FB1E518F1600557BB1 /* MetalLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				381E26FC1E518F1600557BB1 /* MetalLibrary.metal */,
-			);
-			path = MetalLibrary;
-			sourceTree = "<group>";
-		};
 		381E27061E518F1F00557BB1 /* XPCService */ = {
 			isa = PBXGroup;
 			children = (
@@ -1635,7 +1624,6 @@
 				381E26BE1E516E9C00557BB1 /* ActionExtension */,
 				381E26D31E516EB200557BB1 /* CocoaFramework */,
 				381E26E01E516EB200557BB1 /* CocoaFrameworkTests */,
-				381E26FB1E518F1600557BB1 /* MetalLibrary */,
 				381E27061E518F1F00557BB1 /* XPCService */,
 				381E271A1E518F6F00557BB1 /* Bundle */,
 				381E27261E518FBA00557BB1 /* AppleScriptApplication */,
@@ -1694,7 +1682,6 @@
 				381E26D21E516EB200557BB1 /* CocoaFramework.framework */,
 				381E26DA1E516EB200557BB1 /* CocoaFrameworkTests.xctest */,
 				381E26F41E516EBF00557BB1 /* libLibrary.a */,
-				381E26FA1E518F1600557BB1 /* MetalLibrary.metallib */,
 				381E27051E518F1F00557BB1 /* XPCService.xpc */,
 				381E27191E518F6F00557BB1 /* Bundle.bundle */,
 				381E27231E518FBA00557BB1 /* AppleScriptApplication.app */,
@@ -2013,21 +2000,6 @@
 			productName = Library;
 			productReference = 381E26F41E516EBF00557BB1 /* libLibrary.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		381E26F91E518F1600557BB1 /* MetalLibrary */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381E26FE1E518F1600557BB1 /* Build configuration list for PBXNativeTarget "MetalLibrary" */;
-			buildPhases = (
-				381E26F81E518F1600557BB1 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MetalLibrary;
-			productName = MetalLibrary;
-			productReference = 381E26FA1E518F1600557BB1 /* MetalLibrary.metallib */;
-			productType = "com.apple.product-type.metal-library";
 		};
 		381E27041E518F1F00557BB1 /* XPCService */ = {
 			isa = PBXNativeTarget;
@@ -2802,11 +2774,6 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
-					381E26F91E518F1600557BB1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
 					381E27041E518F1F00557BB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -3040,7 +3007,6 @@
 				381E26D11E516EB200557BB1 /* CocoaFramework */,
 				381E26D91E516EB200557BB1 /* CocoaFrameworkTests */,
 				381E26F31E516EBF00557BB1 /* Library */,
-				381E26F91E518F1600557BB1 /* MetalLibrary */,
 				381E27041E518F1F00557BB1 /* XPCService */,
 				381E27181E518F6F00557BB1 /* Bundle */,
 				381E27221E518FBA00557BB1 /* AppleScriptApplication */,
@@ -3549,14 +3515,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E26F81E518F1600557BB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381E26FD1E518F1600557BB1 /* MetalLibrary.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4490,22 +4448,6 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = A43A74F4MB;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		381E26FF1E518F1600557BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		381E27001E518F1600557BB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -6035,15 +5977,6 @@
 			buildConfigurations = (
 				381E26F61E516EBF00557BB1 /* Debug */,
 				381E26F71E516EBF00557BB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		381E26FE1E518F1600557BB1 /* Build configuration list for PBXNativeTarget "MetalLibrary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381E26FF1E518F1600557BB1 /* Debug */,
-				381E27001E518F1600557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
