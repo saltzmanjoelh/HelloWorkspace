@@ -604,8 +604,6 @@
 		381E274C1E518FD200557BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 		381E274E1E518FD200557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E27501E518FD200557BB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		381E275C1E518FDA00557BB1 /* KernelExtension.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelExtension.c; sourceTree = "<group>"; };
-		381E275E1E518FDA00557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E27671E518FEC00557BB1 /* PreferencePane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreferencePane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E27691E518FEC00557BB1 /* PreferencePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencePane.h; sourceTree = "<group>"; };
 		381E276B1E518FEC00557BB1 /* PreferencePane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencePane.m; sourceTree = "<group>"; };
@@ -620,12 +618,6 @@
 		381E278B1E51900600557BB1 /* ScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverView.h; sourceTree = "<group>"; };
 		381E278D1E51900600557BB1 /* ScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverView.m; sourceTree = "<group>"; };
 		381E278F1E51900600557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		381E27C31E5191F400557BB1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		381E27C51E5191F400557BB1 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		381E27C71E5191F400557BB1 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
-		381E27C81E5191F400557BB1 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
-		381E27CA1E5191F400557BB1 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		381E27CB1E5191F400557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E27E81E51922800557BB1 /* QuickLookPlugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickLookPlugin.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E27EA1E51922800557BB1 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
 		381E27EC1E51922800557BB1 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
@@ -680,7 +672,6 @@
 		381E287C1E5193BD00557BB1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		381E287F1E5193BD00557BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		381E28811E5193BD00557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		381E28A41E5193D900557BB1 /* InAppPurchaseContent */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = InAppPurchaseContent; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E28A61E5193D900557BB1 /* ContentInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContentInfo.plist; sourceTree = "<group>"; };
 		381E28AE1E5193F100557BB1 /* TvApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E28B01E5193F100557BB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1299,15 +1290,6 @@
 			path = AutomatorAction;
 			sourceTree = "<group>";
 		};
-		381E275B1E518FDA00557BB1 /* KernelExtension */ = {
-			isa = PBXGroup;
-			children = (
-				381E275C1E518FDA00557BB1 /* KernelExtension.c */,
-				381E275E1E518FDA00557BB1 /* Info.plist */,
-			);
-			path = KernelExtension;
-			sourceTree = "<group>";
-		};
 		381E27681E518FEC00557BB1 /* PreferencePane */ = {
 			isa = PBXGroup;
 			children = (
@@ -1338,27 +1320,6 @@
 				381E278F1E51900600557BB1 /* Info.plist */,
 			);
 			path = ScreenSaver;
-			sourceTree = "<group>";
-		};
-		381E27C11E5191F400557BB1 /* SpotlightImporter */ = {
-			isa = PBXGroup;
-			children = (
-				381E27C51E5191F400557BB1 /* GetMetadataForFile.m */,
-				381E27C71E5191F400557BB1 /* MySpotlightImporter.h */,
-				381E27C81E5191F400557BB1 /* MySpotlightImporter.m */,
-				381E27CA1E5191F400557BB1 /* Importer Read Me.txt */,
-				381E27CB1E5191F400557BB1 /* Info.plist */,
-				381E27C21E5191F400557BB1 /* Supporting Files */,
-			);
-			path = SpotlightImporter;
-			sourceTree = "<group>";
-		};
-		381E27C21E5191F400557BB1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				381E27C31E5191F400557BB1 /* main.c */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		381E27E91E51922800557BB1 /* QuickLookPlugin */ = {
@@ -1723,11 +1684,9 @@
 				381E27261E518FBA00557BB1 /* AppleScriptApplication */,
 				381E273A1E518FCA00557BB1 /* AddressBookPlugin */,
 				381E27471E518FD200557BB1 /* AutomatorAction */,
-				381E275B1E518FDA00557BB1 /* KernelExtension */,
 				381E27681E518FEC00557BB1 /* PreferencePane */,
 				381E277C1E518FF700557BB1 /* QuartzPlugin */,
 				381E278A1E51900600557BB1 /* ScreenSaver */,
-				381E27C11E5191F400557BB1 /* SpotlightImporter */,
 				381E27E91E51922800557BB1 /* QuickLookPlugin */,
 				381E27FA1E51928100557BB1 /* IOKitDriver */,
 				381E28081E51928E00557BB1 /* InstallerPlugin */,
@@ -1798,7 +1757,6 @@
 				381E285C1E5193BD00557BB1 /* CrossPlatformGame Extension.appex */,
 				381E286A1E5193BD00557BB1 /* CrossPlatformGame.app */,
 				381E28781E5193BD00557BB1 /* CrossPlatformGame.app */,
-				381E28A41E5193D900557BB1 /* InAppPurchaseContent */,
 				381E28AE1E5193F100557BB1 /* TvApp.app */,
 				381E28BE1E5193F100557BB1 /* TvAppTests.xctest */,
 				381E28C91E5193F100557BB1 /* TvAppUITests.xctest */,
@@ -2442,21 +2400,6 @@
 			productReference = 381E28781E5193BD00557BB1 /* CrossPlatformGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		381E28A31E5193D900557BB1 /* InAppPurchaseContent */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381E28A71E5193D900557BB1 /* Build configuration list for PBXNativeTarget "InAppPurchaseContent" */;
-			buildPhases = (
-				381E28A21E5193D900557BB1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = InAppPurchaseContent;
-			productName = InAppPurchaseContent;
-			productReference = 381E28A41E5193D900557BB1 /* InAppPurchaseContent */;
-			productType = "com.apple.product-type.in-app-purchase-content";
-		};
 		381E28AD1E5193F100557BB1 /* TvApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 381E28D01E5193F100557BB1 /* Build configuration list for PBXNativeTarget "TvApp" */;
@@ -3047,11 +2990,6 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
-					381E28A31E5193D900557BB1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
 					381E28AD1E5193F100557BB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -3228,7 +3166,6 @@
 				381E285B1E5193BD00557BB1 /* watchOS Extension */,
 				381E28691E5193BD00557BB1 /* tvOS */,
 				381E28771E5193BD00557BB1 /* macOS */,
-				381E28A31E5193D900557BB1 /* InAppPurchaseContent */,
 				381E28AD1E5193F100557BB1 /* TvApp */,
 				381E28BD1E5193F100557BB1 /* TvAppTests */,
 				381E28C81E5193F100557BB1 /* TvAppUITests */,
@@ -3473,13 +3410,6 @@
 				381E28881E5193BD00557BB1 /* GameScene.sks in Resources */,
 				381E28901E5193BD00557BB1 /* Assets.xcassets in Resources */,
 				381E28841E5193BD00557BB1 /* Actions.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E28A21E5193D900557BB1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5222,28 +5152,6 @@
 			};
 			name = Release;
 		};
-		381E28A81E5193D900557BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = InAppPurchaseContent/ContentInfo.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = "";
-			};
-			name = Debug;
-		};
-		381E28A91E5193D900557BB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = InAppPurchaseContent/ContentInfo.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = "";
-			};
-			name = Release;
-		};
 		381E28D11E5193F100557BB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6522,15 +6430,6 @@
 			buildConfigurations = (
 				381E28A01E5193BD00557BB1 /* Debug */,
 				381E28A11E5193BD00557BB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		381E28A71E5193D900557BB1 /* Build configuration list for PBXNativeTarget "InAppPurchaseContent" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381E28A81E5193D900557BB1 /* Debug */,
-				381E28A91E5193D900557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
