@@ -53,8 +53,6 @@
 		381E27EB1E51922800557BB1 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EA1E51922800557BB1 /* GenerateThumbnailForURL.c */; };
 		381E27ED1E51922800557BB1 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EC1E51922800557BB1 /* GeneratePreviewForURL.c */; };
 		381E27EF1E51922800557BB1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 381E27EE1E51922800557BB1 /* main.c */; };
-		381E27FC1E51928100557BB1 /* IOKitDriver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 381E27FB1E51928100557BB1 /* IOKitDriver.hpp */; };
-		381E27FE1E51928100557BB1 /* IOKitDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 381E27FD1E51928100557BB1 /* IOKitDriver.cpp */; };
 		381E280B1E51928E00557BB1 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E280A1E51928E00557BB1 /* MyInstallerPane.m */; };
 		381E280E1E51928E00557BB1 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381E280C1E51928E00557BB1 /* MyInstallerPane.xib */; };
 		381E28111E51928E00557BB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 381E280F1E51928E00557BB1 /* Localizable.strings */; };
@@ -622,10 +620,6 @@
 		381E27EC1E51922800557BB1 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		381E27EE1E51922800557BB1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		381E27F01E51922800557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		381E27F91E51928100557BB1 /* IOKitDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOKitDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		381E27FB1E51928100557BB1 /* IOKitDriver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOKitDriver.hpp; sourceTree = "<group>"; };
-		381E27FD1E51928100557BB1 /* IOKitDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOKitDriver.cpp; sourceTree = "<group>"; };
-		381E27FF1E51928100557BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E28071E51928E00557BB1 /* InstallerPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstallerPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E28091E51928E00557BB1 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
 		381E280A1E51928E00557BB1 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
@@ -888,13 +882,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E27E41E51922800557BB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27F51E51928100557BB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1322,16 +1309,6 @@
 			path = QuickLookPlugin;
 			sourceTree = "<group>";
 		};
-		381E27FA1E51928100557BB1 /* IOKitDriver */ = {
-			isa = PBXGroup;
-			children = (
-				381E27FB1E51928100557BB1 /* IOKitDriver.hpp */,
-				381E27FD1E51928100557BB1 /* IOKitDriver.cpp */,
-				381E27FF1E51928100557BB1 /* Info.plist */,
-			);
-			path = IOKitDriver;
-			sourceTree = "<group>";
-		};
 		381E28081E51928E00557BB1 /* InstallerPlugin */ = {
 			isa = PBXGroup;
 			children = (
@@ -1668,7 +1645,6 @@
 				381E277C1E518FF700557BB1 /* QuartzPlugin */,
 				381E278A1E51900600557BB1 /* ScreenSaver */,
 				381E27E91E51922800557BB1 /* QuickLookPlugin */,
-				381E27FA1E51928100557BB1 /* IOKitDriver */,
 				381E28081E51928E00557BB1 /* InstallerPlugin */,
 				381E28211E51935E00557BB1 /* ImageUnitPlugin */,
 				381E28371E5193BD00557BB1 /* Shared */,
@@ -1728,7 +1704,6 @@
 				381E277B1E518FF700557BB1 /* QuartzPlugin.plugin */,
 				381E27891E51900600557BB1 /* ScreenSaver.saver */,
 				381E27E81E51922800557BB1 /* QuickLookPlugin.qlgenerator */,
-				381E27F91E51928100557BB1 /* IOKitDriver.kext */,
 				381E28071E51928E00557BB1 /* InstallerPlugin.bundle */,
 				381E28201E51935E00557BB1 /* ImageUnitPlugin.plugin */,
 				381E28401E5193BD00557BB1 /* CrossPlatformGame.app */,
@@ -1816,14 +1791,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27F61E51928100557BB1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381E27FC1E51928100557BB1 /* IOKitDriver.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2219,24 +2186,6 @@
 			productName = QuickLookPlugin;
 			productReference = 381E27E81E51922800557BB1 /* QuickLookPlugin.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
-		};
-		381E27F81E51928100557BB1 /* IOKitDriver */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 381E28001E51928100557BB1 /* Build configuration list for PBXNativeTarget "IOKitDriver" */;
-			buildPhases = (
-				381E27F41E51928100557BB1 /* Sources */,
-				381E27F51E51928100557BB1 /* Frameworks */,
-				381E27F61E51928100557BB1 /* Headers */,
-				381E27F71E51928100557BB1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IOKitDriver;
-			productName = IOKitDriver;
-			productReference = 381E27F91E51928100557BB1 /* IOKitDriver.kext */;
-			productType = "com.apple.product-type.kernel-extension";
 		};
 		381E28061E51928E00557BB1 /* InstallerPlugin */ = {
 			isa = PBXNativeTarget;
@@ -2903,11 +2852,6 @@
 						DevelopmentTeam = A43A74F4MB;
 						ProvisioningStyle = Automatic;
 					};
-					381E27F81E51928100557BB1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A43A74F4MB;
-						ProvisioningStyle = Automatic;
-					};
 					381E28061E51928E00557BB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A43A74F4MB;
@@ -3106,7 +3050,6 @@
 				381E277A1E518FF700557BB1 /* QuartzPlugin */,
 				381E27881E51900600557BB1 /* ScreenSaver */,
 				381E27E71E51922800557BB1 /* QuickLookPlugin */,
-				381E27F81E51928100557BB1 /* IOKitDriver */,
 				381E28061E51928E00557BB1 /* InstallerPlugin */,
 				381E281F1E51935E00557BB1 /* ImageUnitPlugin */,
 				381E283F1E5193BD00557BB1 /* iOS */,
@@ -3274,13 +3217,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		381E27E61E51922800557BB1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27F71E51928100557BB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3696,14 +3632,6 @@
 				381E27EB1E51922800557BB1 /* GenerateThumbnailForURL.c in Sources */,
 				381E27ED1E51922800557BB1 /* GeneratePreviewForURL.c in Sources */,
 				381E27EF1E51922800557BB1 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		381E27F41E51928100557BB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				381E27FE1E51928100557BB1 /* IOKitDriver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4815,36 +4743,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.QuickLookPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Release;
-		};
-		381E28011E51928100557BB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = IOKitDriver/Info.plist;
-				MODULE_NAME = com.joelsaltzman.IOKitDriver;
-				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.IOKitDriver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = Debug;
-		};
-		381E28021E51928100557BB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = A43A74F4MB;
-				INFOPLIST_FILE = IOKitDriver/Info.plist;
-				MODULE_NAME = com.joelsaltzman.IOKitDriver;
-				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelsaltzman.IOKitDriver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
 		};
@@ -6227,15 +6125,6 @@
 			buildConfigurations = (
 				381E27F21E51922800557BB1 /* Debug */,
 				381E27F31E51922800557BB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		381E28001E51928100557BB1 /* Build configuration list for PBXNativeTarget "IOKitDriver" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				381E28011E51928100557BB1 /* Debug */,
-				381E28021E51928100557BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
