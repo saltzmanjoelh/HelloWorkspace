@@ -9,16 +9,6 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>QuicklookPlugin.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>SpotlightImporter.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
-		</dict>
 		<key>TargetB.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,16 +17,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>381E27AC1E5191D300557BB1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>381E27D61E51920800557BB1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3836A76F1E3EDB330098CE9A</key>
 		<dict>
 			<key>primary</key>
